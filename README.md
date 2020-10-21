@@ -18,4 +18,4 @@ Autosplitter for Steam version
 
 # Scriptable Auto Splitter: Advanced Settings
 
-● You can select exactly which maps you would like it to auto split (by default every level is checked), splitting the last level doesn't work with Direct3D renderer
+● You can select exactly which maps you would like it to auto split (by default every level is checked)
