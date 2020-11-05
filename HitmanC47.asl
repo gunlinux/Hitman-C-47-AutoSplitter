@@ -1,5 +1,6 @@
 state("hitman")
 {
+	byte Load : "EngineData.dll", 0x002C514, 0x0;
 	byte Start : "GSC.dll", 0x00050E8, 0x64;
 	short AllLevels : "HitmanDlc.dlc", 0x0149448, 0x0;
 	long End : "EngineData.dll", 0x0018858, 0x0;
@@ -23,6 +24,9 @@ startup
 	settings.Add("level11", true, "Plutonium Runs Loose", "am");
 	settings.Add("level12", true, "The Setup", "am");
 	settings.Add("level13", true, "Meet Your Brother", "am");
+	
+	settings.Add("option1", false, "Game Time");
+	settings.SetToolTip("option1", "Enables loadless time, to see it switch livesplit comparison to Game Time");
 }
 
 start
@@ -46,4 +50,9 @@ split
 	if (settings["level12"] && current.AllLevels == 213 && old.AllLevels == 296) return true;
 	if (settings["level13"] && current.End == 4607353724572573678 && old.End == 4604928082310158997) return true;
 	if (settings["level13"] && current.End == 4607353724572573678 && old.End == 4608115144822595047) return true;
+}
+
+isLoading
+{
+	return (settings["option1"] && current.Load == 0);
 }
