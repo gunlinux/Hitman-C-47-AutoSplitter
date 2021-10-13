@@ -1,6 +1,6 @@
 state("hitman")
 {
-	byte Load : "EngineData.dll", 0x002C514, 0x0;
+	int Load : "HitmanDlc.dlc", 0x021B5C0, 0x06B8, 0x0EC, 0x064, 0x034, 0x0140, 0x030, 0x04E8;
 	byte Start : "GSC.dll", 0x00050E8, 0x64;
 	short AllLevels : "HitmanDlc.dlc", 0x0149448, 0x0;
 	long End : "EngineData.dll", 0x0018858, 0x0;
@@ -56,5 +56,5 @@ split
 
 isLoading
 {
-	return settings["option1"] && current.Load == 0;
+	return settings["option1"] && current.Load > 0;
 }
