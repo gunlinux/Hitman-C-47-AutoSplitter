@@ -30,3 +30,8 @@ Autosplitter for Steam version
 # Scriptable Auto Splitter: Advanced Settings
 
 ● You can select exactly which maps you would like it to auto split (by default every level is checked)
+
+
+# Other
+
+In order to see loadless time you need to: right click livesplit when it's open -> Compare Against -> Game Time
