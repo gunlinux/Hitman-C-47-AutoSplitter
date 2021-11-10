@@ -39,6 +39,7 @@ split
 	(settings["level3"] && current.AllLevels == 183 && old.AllLevels == 303)||
 	(settings["level4"] && current.AllLevels == 220 && old.AllLevels == 183)||
 	(settings["level5"] && current.AllLevels == 280 && old.AllLevels == 220)||
+	(settings["level5"] && current.AllLevels == 213 && old.AllLevels == 220)||
 	(settings["level6"] && current.AllLevels == 272 && old.AllLevels == 280)||
 	(settings["level7"] && current.AllLevels == 169 && old.AllLevels == 272)||
 	(settings["level8"] && current.AllLevels == 200 && old.AllLevels == 169)||
